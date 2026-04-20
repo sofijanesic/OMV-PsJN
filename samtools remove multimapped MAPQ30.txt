@@ -1,0 +1,43 @@
+# Create output folder
+mkdir -p Q30
+
+# OMV1 SE50
+samtools view -h -q 30 OMV1_SE50_bwa_dedup.bam > Q30/OMV1_SE50_bwa_dedup_unique30.sam
+samtools view -Sb Q30/OMV1_SE50_bwa_dedup_unique30.sam > Q30/OMV1_SE50_bwa_dedup_unique30.bam
+samtools index Q30/OMV1_SE50_bwa_dedup_unique30.bam Q30/OMV1_SE50_bwa_dedup_unique30.bam.bai
+
+# OMV3 SE50
+samtools view -h -q 30 OMV3_SE50_bwa_dedup.bam > Q30/OMV3_SE50_bwa_dedup_unique30.sam
+samtools view -Sb Q30/OMV3_SE50_bwa_dedup_unique30.sam > Q30/OMV3_SE50_bwa_dedup_unique30.bam
+samtools index Q30/OMV3_SE50_bwa_dedup_unique30.bam Q30/OMV3_SE50_bwa_dedup_unique30.bam.bai
+
+# CELLS1 SE50
+samtools view -h -q 30 CELLS1_SE50_bwa_dedup.bam > Q30/CELLS1_SE50_bwa_dedup_unique30.sam
+samtools view -Sb Q30/CELLS1_SE50_bwa_dedup_unique30.sam > Q30/CELLS1_SE50_bwa_dedup_unique30.bam
+samtools index Q30/CELLS1_SE50_bwa_dedup_unique30.bam Q30/CELLS1_SE50_bwa_dedup_unique30.bam.bai
+
+# CELLS3 SE50
+samtools view -h -q 30 CELLS3_SE50_bwa_dedup.bam > Q30/CELLS3_SE50_bwa_dedup_unique30.sam
+samtools view -Sb Q30/CELLS3_SE50_bwa_dedup_unique30.sam > Q30/CELLS3_SE50_bwa_dedup_unique30.bam
+samtools index Q30/CELLS3_SE50_bwa_dedup_unique30.bam Q30/CELLS3_SE50_bwa_dedup_unique30.bam.bai
+
+
+# OMV1 PE100
+samtools view -h -q 30 OMV1_PE100_bwa_dedup.bam > Q30/OMV1_PE100_bwa_dedup_unique30.sam
+samtools view -Sb Q30/OMV1_PE100_bwa_dedup_unique30.sam > Q30/OMV1_PE100_bwa_dedup_unique30.bam
+samtools index Q30/OMV1_PE100_bwa_dedup_unique30.bam Q30/OMV1_PE100_bwa_dedup_unique30.bam.bai
+
+# OMV3 PE100
+samtools view -h -q 30 OMV3_PE100_bwa_dedup.bam > Q30/OMV3_PE100_bwa_dedup_unique30.sam
+samtools view -Sb Q30/OMV3_PE100_bwa_dedup_unique30.sam > Q30/OMV3_PE100_bwa_dedup_unique30.bam
+samtools index Q30/OMV3_PE100_bwa_dedup_unique30.bam Q30/OMV3_PE100_bwa_dedup_unique30.bam.bai
+
+# CELLS1 PE100
+samtools view -h -q 30 CELLS1_PE100_bwa_dedup.bam > Q30/CELLS1_PE100_bwa_dedup_unique30.sam
+samtools view -Sb Q30/CELLS1_PE100_bwa_dedup_unique30.sam > Q30/CELLS1_PE100_bwa_dedup_unique30.bam
+samtools index Q30/CELLS1_PE100_bwa_dedup_unique30.bam Q30/CELLS1_PE100_bwa_dedup_unique30.bam.bai
+
+# CELLS3 PE100
+samtools view -h -q 30 CELLS3_PE100_bwa_dedup.bam > Q30/CELLS3_PE100_bwa_dedup_unique30.sam
+samtools view -Sb Q30/CELLS3_PE100_bwa_dedup_unique30.sam > Q30/CELLS3_PE100_bwa_dedup_unique30.bam
+samtools index Q30/CELLS3_PE100_bwa_dedup_unique30.bam Q30/CELLS3_PE100_bwa_dedup_unique30.bam.bai

@@ -1,0 +1,163 @@
+(imgge-kurs) sofija@DESKTOP-J2S0GHL:~/bgiomv/dedup$ featureCounts \
+  -a GCA_000020125.1/genomic.gtf \
+  -o Q30/counts_SE50_unique30.txt \
+  -t gene \
+  -g locus_tag \
+  -s 0 \
+  Q30/*SE50*unique30.bam
+
+        ==========     _____ _    _ ____  _____  ______          _____
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+          v2.0.6
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 4 BAM files                                      ||
+||                                                                            ||
+||                           CELLS1_SE50_bwa_dedup_unique30.bam               ||
+||                           CELLS3_SE50_bwa_dedup_unique30.bam               ||
+||                           OMV1_SE50_bwa_dedup_unique30.bam                 ||
+||                           OMV3_SE50_bwa_dedup_unique30.bam                 ||
+||                                                                            ||
+||             Output file : counts_SE50_unique30.txt                         ||
+||                 Summary : counts_SE50_unique30.txt.summary                 ||
+||              Paired-end : no                                               ||
+||        Count read pairs : no                                               ||
+||              Annotation : genomic.gtf (GTF)                                ||
+||      Dir for temp files : Q30                                              ||
+||                                                                            ||
+||                 Threads : 1                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file genomic.gtf ...                                       ||
+||    Features : 7489                                                         ||
+||    Meta-features : 7489                                                    ||
+||    Chromosomes/contigs : 3                                                 ||
+||                                                                            ||
+|| Process BAM file CELLS1_SE50_bwa_dedup_unique30.bam...                     ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 16558048                                             ||
+||    Successfully assigned alignments : 12128826 (73.3%)                     ||
+||    Running time : 0.10 minutes                                             ||
+||                                                                            ||
+|| Process BAM file CELLS3_SE50_bwa_dedup_unique30.bam...                     ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 10430973                                             ||
+||    Successfully assigned alignments : 7793473 (74.7%)                      ||
+||    Running time : 0.06 minutes                                             ||
+||                                                                            ||
+|| Process BAM file OMV1_SE50_bwa_dedup_unique30.bam...                       ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 1048429                                              ||
+||    Successfully assigned alignments : 883250 (84.2%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file OMV3_SE50_bwa_dedup_unique30.bam...                       ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 1745934                                              ||
+||    Successfully assigned alignments : 1584897 (90.8%)                      ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "Q30/counts_SE50_unique3  ||
+|| 0.txt.summary"                                                             ||
+||                                                                            ||
+\\============================================================================//
+
+
+(imgge-kurs) sofija@DESKTOP-J2S0GHL:~/bgiomv/dedup$ featureCounts \
+  -a GCA_000020125.1/genomic.gtf \
+  -o Q30/counts_PE100_unique30.txt \
+  -t gene \
+  -g locus_tag \
+  -s 0 \
+  -p \
+  Q30/*PE100*unique30.bam
+
+        ==========     _____ _    _ ____  _____  ______          _____
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+          v2.0.6
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 4 BAM files                                      ||
+||                                                                            ||
+||                           CELLS1_PE100_bwa_dedup_unique30.bam              ||
+||                           CELLS3_PE100_bwa_dedup_unique30.bam              ||
+||                           OMV1_PE100_bwa_dedup_unique30.bam                ||
+||                           OMV3_PE100_bwa_dedup_unique30.bam                ||
+||                                                                            ||
+||             Output file : counts_PE100_unique30.txt                        ||
+||                 Summary : counts_PE100_unique30.txt.summary                ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : no                                               ||
+||              Annotation : genomic.gtf (GTF)                                ||
+||      Dir for temp files : Q30                                              ||
+||                                                                            ||
+||                 Threads : 1                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file genomic.gtf ...                                       ||
+||    Features : 7489                                                         ||
+||    Meta-features : 7489                                                    ||
+||    Chromosomes/contigs : 3                                                 ||
+||                                                                            ||
+|| Process BAM file CELLS1_PE100_bwa_dedup_unique30.bam...                    ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 34876339                                             ||
+||    Successfully assigned alignments : 27241437 (78.1%)                     ||
+||    Running time : 0.26 minutes                                             ||
+||                                                                            ||
+|| Process BAM file CELLS3_PE100_bwa_dedup_unique30.bam...                    ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 26450146                                             ||
+||    Successfully assigned alignments : 20054578 (75.8%)                     ||
+||    Running time : 0.20 minutes                                             ||
+||                                                                            ||
+|| Process BAM file OMV1_PE100_bwa_dedup_unique30.bam...                      ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 206218                                               ||
+||    Successfully assigned alignments : 168744 (81.8%)                       ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process BAM file OMV3_PE100_bwa_dedup_unique30.bam...                      ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 1123594                                              ||
+||    Successfully assigned alignments : 829324 (73.8%)                       ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "Q30/counts_PE100_unique  ||
+|| 30.txt.summary"                                                            ||
+||                                                                            ||
+\\============================================================================//
